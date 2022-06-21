@@ -8,7 +8,7 @@ const useLatestEmailPosts = () => {
       allContentfulPost(sort: { fields: createdAt, order: DESC }, limit: 3) {
         nodes {
           title
-          gatsbyPath(filePath: "/Blog/{contentfulPost.url}")
+          gatsbyPath(filePath: "/spaces/{contentfulPost.url}")
           createdAt
         }
       }

@@ -8,7 +8,7 @@ const useAllBlogPosts = () => {
       allContentfulPost(sort: { fields: createdAt, order: DESC }) {
         nodes {
           title
-          gatsbyPath(filePath: "/Blog/{contentfulPost.url}")
+          gatsbyPath(filePath: "/spaces/{contentfulPost.url}")
           createdAt
         }
       }

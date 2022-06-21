@@ -8,7 +8,7 @@ const HomeTemplate = (contentfulPost) => {
   console.log({contentfulPost});
   console.log({latestBlogPosts});
   return (
-    <>
+    <Fragment>
       <h1>{contentfulPost.title}</h1>
       <p>{contentfulPost.description.description}</p>
       {contentfulPost.image ? (
@@ -25,7 +25,7 @@ const HomeTemplate = (contentfulPost) => {
           );
         })}
       </ul>
-    </>
+    </Fragment>
   );
 };
 
